@@ -1,0 +1,77 @@
+<section id="specials">
+    <div class="container">
+      <h2>Specials &amp; Promotions</h2>
+      <div class="specials-content">
+        <div class="special">
+          <h3>Weekend Dinner Special</h3>
+          <p>Enjoy a delightful weekend dinner with our exclusive menu selection.</p>
+          <p>Available Fridays and Saturdays from 6:00 PM to 9:00 PM.</p>
+        </div>
+        <div class="special">
+          <h3>Lunch Combo Deal</h3>
+          <p>Try our delicious lunch combo with a choice of main course, side dish, and drink.</p>
+          <p>Available Monday to Friday from 12:00 PM to 2:30 PM.</p>
+        </div>
+        <div class="special">
+          <h3>Happy Hour</h3>
+          <p>Join us for Happy Hour and enjoy discounted prices on select drinks and appetizers.</p>
+          <p>Available every day from 4:00 PM to 6:00 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+  /* CSS styles for the Specials & Promotions section */
+  #specials {
+    background-color: #f0f5ff; /* Pastel blue color */
+    padding: 40px;
+  }
+  
+  .specials-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .special {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .specials-content .special:nth-child(odd) {
+    animation: fade-in-left 0.5s forwards;
+  }
+  
+  .specials-content .special:nth-child(even) {
+    animation: fade-in-right 0.5s forwards;
+  }
+  
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
+    

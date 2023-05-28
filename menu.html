@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-color: black;
+  }
+  .gallery {
+  position: relative;
+  margin-top: 50px;
+  height: 800px;
+}
+
+.gallery img {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border: 5px solid white;
+  border-radius: 50%;
+  animation: float-up 10s ease-in-out infinite;
+}
+
+.gallery img:nth-child(1) {
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+  z-index: 7;
+  animation-duration: 12s;
+}
+
+.gallery img:nth-child(2) {
+  left: 25%;
+  top: -200px;
+  transform: translateX(-50%);
+  z-index: 6;
+  animation-duration: 15s;
+}
+
+.gallery img:nth-child(3) {
+  left: 75%;
+  top: -250px;
+  transform: translateX(-50%);
+  z-index: 5;
+  animation-duration: 20s;
+}
+
+.gallery img:nth-child(4) {
+  left: 10%;
+  top: -350px;
+  transform: translateX(-50%);
+  z-index: 4;
+  animation-duration: 18s;
+}
+
+.gallery img:nth-child(5) {
+  left: 90%;
+  top: -400px;
+  transform: translateX(-50%);
+  z-index: 3;
+  animation-duration: 16s;
+}
+
+.gallery img:nth-child(6) {
+  left: 50%;
+  top: -500px;
+  transform: translateX(-50%);
+  z-index: 2;
+  animation-duration: 14s;
+}
+
+.gallery img:nth-child(7) {
+  left: 25%;
+  top: -600px;
+  transform: translateX(-50%);
+  z-index: 1;
+  animation-duration: 17s;
+}
+
+@keyframes float-up {
+  from {
+    transform: translateY(800px);
+  }
+  to {
+    transform: translateY(-800px);
+  }
+}
+
+
+
+</style>
+<body>
+  <div class="gallery">
+    <img src='https://images.pexels.com/photos/1537635/pexels-photo-1537635.jpeg?auto=compress&cs=tinysrgb&w=600' alt='restaurant1' class="gallery-image">
+    <img src='https://images.pexels.com/photos/698907/pexels-photo-698907.jpeg?auto=compress&cs=tinysrgb&w=600' alt='dish1' class="gallery-image">
+    <img src='https://images.pexels.com/photos/4279097/pexels-photo-4279097.jpeg?auto=compress&cs=tinysrgb&w=600' alt='dish2' class="gallery-image">
+    <img src='https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=600' alt='dish3' class="gallery-image">
+    <img src='https://images.pexels.com/photos/15733201/pexels-photo-15733201.jpeg?auto=compress&cs=tinysrgb&w=600' alt='party1' class="gallery-image">
+    <img src='https://images.pexels.com/photos/6193567/pexels-photo-6193567.jpeg?auto=compress&cs=tinysrgb&w=600' alt='party2' class="gallery-image">
+    <img src='https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg?auto=compress&cs=tinysrgb&w=600' alt='restaurant2' class="gallery-image">
+    <img src='https://images.pexels.com/photos/15568732/pexels-photo-15568732.jpeg?auto=compress&cs=tinysrgb&w=600' alt='dish4' class="gallery-image">
+    <img src='https://images.pexels.com/photos/5083910/pexels-photo-5083910.jpeg?auto=compress&cs=tinysrgb&w=600' alt='dish5' class="gallery-image">
+  </div>
+   
+
+  
+  
+</body>
+</html>

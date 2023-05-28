@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="public/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1e95d730b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#" id="menu-btn">Menu</a>
+            <!-- Menu button -->
+
+
+<!-- Hidden div that contains the animation -->
+<div id="menu-container">
+  <button id="close-btn">Close menu</button>
+  <div><iframe src="https://www.postermywall.com/index.php/posterbuilder/load/b98440f4f6ddaa6a6459c4f98377f4e3#.ZFPEAXZBy3A" name="myIFrame" scrolling="auto" width="100%" height="100%" style="border: 4px solid #000000;"></iframe></iframe></div>
+  
+
+        </li>
+        <li><a href="./gallary.html">Gallery</a></li>
+        <li><a href="./home.html">Reservations</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="specials.html">Specials & Promotions</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 class="restaurant">Welcome to Sky Dine</h1>
+          <p class="btt">We serve delicious food for all occasions</p>
+          <a href="./home.html" class="cta-button">Make a Reservation</a>
+        </div>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: First slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="auto" fill="#777"></rect>
+              <text x="50%" y="50%" fill="#555" dy=".3em"></text>
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Second slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#666"></rect>
+              <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/1673876/pexels-photo-1673876.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Third slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#555"></rect>
+              <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+            </svg>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="aboutus">
+      <div class="restaurant-info">
+        <h2>About Us</h2>
+
+        <p class="typewriter">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at
+          vestibulum nisi. Proin tincidunt, nibh vel sagittis accumsan, felis
+          est dictum velit, non ultrices ex purus ut purus. Sed euismod mauris
+          sed sapien lacinia, sed molestie ipsum luctus. Nunc et diam diam.
+          Praesent eget velit ipsum.
+        </p>
+      </div>
+    </section>
+    <section id="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="mission">
+            <h2>Our Mission &amp; Values</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              vulputate urna in velit faucibus, quis ultrices sapien feugiat.
+              Sed scelerisque ligula vitae enim maximus, in convallis nibh
+              porttitor. Nam eget magna bibendum, malesuada magna vel, eleifend
+              odio. Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas.
+            </p>
+          </div>
+          <div class="time">
+            <h2 class="history">Our History</h2>
+            <ul class="timeline">
+              <li class="timeline-event active">
+                <div class="timeline-event-icon">
+                  <i class="fa fa-calendar"></i>
+                </div>
+                <div class="timeline-event-content">
+                  <h3 class="timeline-event-title">
+                    Establishment of Restaurant
+                  </h3>
+                  <span class="timeline-event-date">June 1, 1980</span>
+                  <p class="timeline-event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis vulputate urna in velit faucibus, quis ultrices sapien
+                    feugiat.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-event active">
+                <div class="timeline-event-icon">
+                  <i class="fa fa-calendar"></i>
+                </div>
+                <div class="timeline-event-content">
+                  <h3 class="timeline-event-title">
+                    Expansion to Multiple Locations
+                  </h3>
+                  <span class="timeline-event-date">September 1, 1995</span>
+                  <p class="timeline-event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis vulputate urna in velit faucibus, quis ultrices sapien
+                    feugiat.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-event active">
+                <div class="timeline-event-icon">
+                  <i class="fa fa-calendar"></i>
+                </div>
+                <div class="timeline-event-content">
+                  <h3 class="timeline-event-title">
+                    Introduction of Online Ordering
+                  </h3>
+                  <span class="timeline-event-date">January 1, 2010</span>
+                  <p class="timeline-event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis vulputate urna in velit faucibus, quis ultrices sapien
+                    feugiat.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="file.js"></script>
+    
+
+  
+</html>

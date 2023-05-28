@@ -1,0 +1,355 @@
+  nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  nav.scrolled {
+    background-color: #555;
+  }
+  
+
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+  }
+  
+  }
+  #home {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+  .hero-text {
+    height:9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+  }
+  
+  .restaurant {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .btt {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    opacity: 0.8;
+  }
+  
+  /* reduce the opacity of the carousel */
+.hero-image .carousel {
+    opacity: 0.8;
+  }
+  
+  
+  /* adjust the position of the reservation button */
+  .hero-image .hero-text .cta-button {
+    margin-top: 50px;
+  }
+  .cta-button {
+    margin-top: 50px;
+  }
+  
+  /* make the button bigger, remove underline, and center text */
+  .hero-image .hero-text .cta-button {
+    margin-top: 25%;
+    font-size: 24px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    background-color: #f5a623;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* add animation on hover */
+  .hero-image .hero-text .cta-button:hover {
+    background-color: #fff;
+    color: #f5a623;
+    box-shadow: 0px 0px 15px #f5a623;
+  }
+  
+  
+  /* adjust the position of the reservation text */
+  .hero-image .hero-text .btt {
+    margin-top: 20px;
+  }
+  
+  /* adjust the position of the carousel indicators */
+  .carousel-indicators {
+    bottom: 50px;
+  }
+  
+  
+  /* adjust the position of the carousel controls */
+  .carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* adjust the size of the carousel images */
+  .carousel-item img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* adjust the position of the carousel text */
+  .carousel-caption {
+    bottom: 100px;
+  }
+  
+  /* adjust the font size of the carousel text */
+  .carousel-caption h2, .carousel-caption p {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+  
+  /* adjust the position of the carousel button */
+  .carousel-caption .btn {
+    margin-top: 20px;
+  }
+  
+  
+  .cta-button:hover {
+    background-color: #fff;
+    color: #FF6347;
+    box-shadow: 0px 0px 20px #FF6347;
+  }
+  
+  .cta-button:active {
+    transform: scale(0.95);
+  }
+  
+  .cta-button:focus {
+    outline: none;
+  }
+  
+  .cta-button:after {
+    content: '\f178';
+    font-family: 'Font Awesome 5 Free';
+    margin-left: 10px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta-button:hover:after {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .cta-button:active:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: rgba(255, 99, 71, 0.2);
+    border-radius: 5px;
+    z-index: -1;
+    animation: pulse 0.5s ease-in-out;
+  }
+
+  .restaurant-info {
+    text-align: center;
+    background-color: #1d1818;
+    color: #e1d5d5;
+    padding: 50px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .restaurant-info h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  /* About Us section */
+#about-us {
+    background-color: #bc9e1a;
+    color: #110e0e;
+    padding: 80px 0;
+  }
+  
+  #about-us h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  #about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  .history{
+    text-align: center;
+  }
+  
+  .mission {
+    text-align: center;
+  }
+  
+  .time {
+    position: relative;
+  }
+  
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #AFD3E2;
+    z-index: -1;
+  }
+  
+  .timeline-event {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-event-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline-event-content {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    background-color: #AFD3E2;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .timeline-event-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-event-date {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-event-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  
+  
+  /* Hide the menu container by default */
+#menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+/* Style the close button */
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.round-image {
+  border-radius: 50%;
+}
+
+  
+  
+  

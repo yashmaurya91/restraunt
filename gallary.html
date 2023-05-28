@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Gallery</title>
+    <link rel="stylesheet" href="public/sty.css" />
+    <style>
+      :root {
+        --duration: 20s;
+        --delay: 20s;
+      }
+
+      html {
+        background-color: black;
+      }
+
+      body {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        perspective: 25rem;
+      }
+
+      .image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        perspective: 100vw;
+        animation: spin var(--duration) var(--delay) linear infinite;
+      }
+
+      .image-container img {
+        --duration: 20s;
+        --name: float-up;
+        width: 30vw;
+        height: auto;
+        margin: 1rem;
+        transform: translate3d(0, 100vh, -100vw);
+        animation: var(--name) var(--duration) linear infinite;
+        box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .image-container img:nth-child(1) {
+        --name: float-up;
+        --duration: 20s;
+        z-index: -1;
+      }
+
+      .image-container img:nth-child(2) {
+        --name: float-up;
+        --duration: 30s;
+        z-index: -2;
+      }
+
+      .image-container img:nth-child(3) {
+        --name: float-up;
+        --duration: 40s;
+        z-index: -3;
+      }
+
+      .image-container img:nth-child(4) {
+        --name: float-up;
+        --duration: 20s;
+        z-index: -1;
+      }
+
+      .image-container img:nth-child(5) {
+        --name: float-up;
+        --duration: 60s;
+        z-index: -2;
+      }
+
+      .image-container img:nth-child(6) {
+        --name: float-up;
+        --duration: 20s;
+        z-index: -3;
+      }
+
+      .image-container img:nth-child(7) {
+        --name: float-up;
+        --duration: 20s;
+        z-index: -2;
+      }
+
+      .image-container img:nth-child(8) {
+        --name: float-up;
+        --duration: 60s;
+        z-index: -3;
+      }
+
+      .image-container img:nth-child(9) {
+        --name: float-up;
+        --duration: 20s;
+        z-index: -1;
+      }
+
+      .image-container img:nth-child(10) {
+        --name: float-up;
+        --duration: 20s;
+        z-index: -2;
+      }
+
+      @keyframes float-up {
+        from {
+          transform: translate3d(0, 100vh, -100vw);
+        }
+        to {
+          transform: translate3d(0, -100vh, -100vw);
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="image-container">
+      <img
+        src="https://images.pexels.com/photos/1537635/pexels-photo-1537635.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="restaurant1"
+        class="round-image"
+      />
+      <img
+        src="https://images.pexels.com/photos/698907/pexels-photo-698907.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish1"
+      />
+      <img
+        src="https://images.pexels.com/photos/4279097/pexels-photo-4279097.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish2"
+      />
+      <img
+        src="https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish3"
+      />
+      <img
+        src="https://images.pexels.com/photos/15733201/pexels-photo-15733201.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="party1"
+      />
+      <img
+        src="https://images.pexels.com/photos/6193567/pexels-photo-6193567.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="party2"
+      />
+      <img
+        src="https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="restaurant2"
+      />
+      <img
+        src="https://images.pexels.com/photos/15568732/pexels-photo-15568732.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish4"
+      />
+      <img
+        src="https://images.pexels.com/photos/5083910/pexels-photo-5083910.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish5"
+      />
+      <img
+        src="https://images.pexels.com/photos/6126302/pexels-photo-6126302.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish6"
+      />
+      <img
+        src="https://images.pexels.com/photos/1537635/pexels-photo-1537635.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="restaurant1"
+      />
+      <img
+        src="https://images.pexels.com/photos/698907/pexels-photo-698907.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish1"
+      />
+      <img
+        src="https://images.pexels.com/photos/4279097/pexels-photo-4279097.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish2"
+      />
+      <img
+        src="https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish3"
+      />
+      <img
+        src="https://images.pexels.com/photos/15733201/pexels-photo-15733201.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="party1"
+      />
+      <img
+        src="https://images.pexels.com/photos/6193567/pexels-photo-6193567.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="party2"
+      />
+      <img
+        src="https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="restaurant2"
+      />
+      <img
+        src="https://images.pexels.com/photos/15568732/pexels-photo-15568732.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish4"
+      />
+      <img
+        src="https://images.pexels.com/photos/5083910/pexels-photo-5083910.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish5"
+      />
+      <img
+        src="https://images.pexels.com/photos/6126302/pexels-photo-6126302.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="dish6"
+      />
+    </div>
+  </body>
+</html>
